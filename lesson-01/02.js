@@ -9,7 +9,7 @@
 let factorial = 1;
 let b = 1;
 while (b <= 10) {
-    factorial = factorial * b;
+    factorial *= b;
     b++
 }
 console.log(factorial);

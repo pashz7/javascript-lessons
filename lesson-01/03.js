@@ -5,4 +5,15 @@
 */
 
 // your code
-let sum
+let sum = 0;
+let b = 1;
+while (b<=20) {
+    if (b % 2 === 0) {
+        console.log("Четное число");
+    }
+    else {
+        sum += b;
+    }
+    b++;
+}
+console.log(sum);
