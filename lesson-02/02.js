@@ -11,21 +11,21 @@
 
 
 
-// let isWinningDouble
-//
-// let dice1 = Math.floor(Math.random() *6) +1;
-// console.log(dice1)
-// let dice2 = Math.floor(Math.random() *6) +1;
-// console.log(dice2)
-// if (dice1 === dice2 && dice1 >3 && dice2 >3) {
-//
-//     isWinningDouble = "ПОБЕДА";
-//     console.log(isWinningDouble);
-// }
-// else {
-//     isWinningDouble = "СОБЕРИСЬ) КИДАЙ ЕЩЕ ";
-//     console.log(isWinningDouble);
-// }
+let isWinningDouble
+
+let dice1 = Math.floor(Math.random() *6) +1;
+console.log(dice1)
+let dice2 = Math.floor(Math.random() *6) +1;
+console.log(dice2)
+if (dice1 === dice2 && dice1 >3 && dice2 >3) {
+
+    isWinningDouble = "ПОБЕДА";
+    console.log(isWinningDouble);
+}
+else {
+    isWinningDouble = "СОБЕРИСЬ) КИДАЙ ЕЩЕ ";
+    console.log(isWinningDouble);
+}
 
 
 // let dice1 = Math.floor(Math.random() * 6) + 1;
@@ -42,23 +42,23 @@
 
 
 
-let isWinningDouble = false
-while (!isWinningDouble) {
-    let dice1 = Math.floor(Math.random() *6) +1;
-    alert(`Твой первый бросок ${dice1}`)
-    let dice2 = Math.floor(Math.random() *6) +1;
-    alert (`Твой второй броск ${dice2}`)
-
-
-    if (dice1 === dice2 ) {
-        alert ("Ты победил")
-        isWinningDouble = true;
-
-    }
-    else {
-
-        alert("ТЫ проиграл")
-    }
-
-}
+// let isWinningDouble = false
+// while (!isWinningDouble) {
+//     let dice1 = Math.floor(Math.random() *6) +1;
+//     alert(`Твой первый бросок ${dice1}`)
+//     let dice2 = Math.floor(Math.random() *6) +1;
+//     alert (`Твой второй броск ${dice2}`)
+//
+//
+//     if (dice1 === dice2 ) {
+//         alert ("Ты победил")
+//         isWinningDouble = true;
+//
+//     }
+//     else {
+//
+//         alert("ТЫ проиграл")
+//     }
+//
+// }
 
