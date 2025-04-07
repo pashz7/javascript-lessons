@@ -11,26 +11,26 @@
 
 
 
-let isWinningDouble
+// let isWinningDouble
+//
+// let dice1 = Math.floor(Math.random() *6) +1;
+// console.log(dice1)
+// let dice2 = Math.floor(Math.random() *6) +1;
+// console.log(dice2)
+// if (dice1 === dice2 && dice1 >3 && dice2 >3) {
+//
+//     isWinningDouble = "ПОБЕДА";
+//     console.log(isWinningDouble);
+// }
+// else {
+//     isWinningDouble = "СОБЕРИСЬ) КИДАЙ ЕЩЕ ";
+//     console.log(isWinningDouble);
+// }
 
-let dice1 = Math.floor(Math.random() *6) +1;
-console.log(dice1)
-let dice2 = Math.floor(Math.random() *6) +1;
-console.log(dice2)
-if (dice1 === dice2 && dice1 >3 && dice2 >3) {
 
-    isWinningDouble = true;
-    console.log(isWinningDouble);
-}
-else {
-    isWinningDouble = false;
-    console.log(isWinningDouble);
-}
-
-
-// let dice1 = Math.floor(Math.random() * 6) + 1; // Генерация случайного числа от 1 до 6
-// let dice2 = Math.floor(Math.random() * 6) + 1; // Генерация случайного числа от 1 до 6
-// let isWinningDouble = (dice1 === dice2) && (dice1 > 3); // Проверка на выигрышный дубль
+// let dice1 = Math.floor(Math.random() * 6) + 1;
+// let dice2 = Math.floor(Math.random() * 6) + 1;
+// let isWinningDouble = (dice1 === dice2) && (dice1 > 3) && dice2 >3; // Проверка если куш)
 //
 // console.log('Первый бросок: ' + dice1);
 // console.log('Второй бросок: ' + dice2);
@@ -39,3 +39,26 @@ else {
 // } else {
 //     console.log('Не выигрышный дубль.');
 // }
+
+
+
+let isWinningDouble = false
+while (!isWinningDouble) {
+    let dice1 = Math.floor(Math.random() *6) +1;
+    alert(`Твой первый бросок ${dice1}`)
+    let dice2 = Math.floor(Math.random() *6) +1;
+    alert (`Твой второй броск ${dice2}`)
+
+
+    if (dice1 === dice2 ) {
+        alert ("Ты победил")
+        isWinningDouble = true;
+
+    }
+    else {
+
+        alert("ТЫ проиграл")
+    }
+
+}
+
