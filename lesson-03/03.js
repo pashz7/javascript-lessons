@@ -2,13 +2,16 @@
 
 function findLargest(a,b,c) {
     if (a > b && a > c) {
-        alert ("Первое число больше всех")
+
+        return console.log("первое число больше всех")
     }
     else if (b > a && b > c) {
-        alert("Второе чилсо больше всех")
+
+       return console.log("Второе чилсо больше всех")
     }
     else {
-        alert ("третье сисло больше всех ")
+
+      return  console.log ("третье число больше всех ")
     }
 }
-findLargest(+prompt(), +prompt(), +prompt());
+findLargest(12,13,15)
