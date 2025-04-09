@@ -2,13 +2,7 @@
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
 function isEven(num) {
-    if (num % 2 === 0) {
-        return console.log(true);
-
-    }
-    else {
-
-        return console.log(false);
-    }
+    return num % 2 === 0;
 }
-isEven(12);
+console.log(isEven(3));
+
