@@ -3,10 +3,12 @@
 
 function isEven(num) {
     if (num % 2 === 0) {
-        alert ("Четное число")
+        return console.log(true);
+
     }
     else {
-        alert ("НЕ четное ")
+
+        return console.log(false);
     }
 }
-isEven(+prompt("Введите число"));
+isEven(12);
