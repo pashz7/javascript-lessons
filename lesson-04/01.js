@@ -14,9 +14,8 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
 
-let arrray = [1,3,5,6,7,8,9,17,122,23,]
-let element = 1231
-function includesElement(array){
+
+function includesElement(array,element) {
 
     for (let i = 0  ; i < array.length ; i++){
         if (array[i] === element){
@@ -25,4 +24,4 @@ function includesElement(array){
     }
     return false
 }
-console.log(includesElement(arrray,element));
+console.log(includesElement([1,3,4,5],6));
