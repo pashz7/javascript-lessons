@@ -23,9 +23,49 @@ const game = {
       }
     }
 
-    return 'Invalid resourse'
+    return console.log('Invalid resource')
 
   }
 }
 game.addResource('golda',30)
 console.log(game)
+
+
+
+// const game = {
+//     resources: {
+//         gold: 250,
+//         lumber: 100,
+//     },
+//     addResource(resource,amount) {
+//         let key = game.resources.hasOwnProperty(resource)
+//         if (key) {
+//             game.resources[resource] += amount;
+//             return
+//         }
+
+
+//         for (const key in game.resources) {
+//             if (key === resource) {
+//                 game.resources[resource] += amount;
+//                 return;
+//             }
+//         }
+//         return "adasdasda"
+//
+//
+//                                      //// РЕШЕНИЕ
+//         // if (this.resources[resource]) {
+//         //
+//         //     this.resources[resource] += amount;
+//         //
+//         //
+//         // }
+//         // else {
+//         //     return "Invalid resource"
+//         // }
+//
+//     }
+// }
+// console.log(game.addResource('gold',30))
+// console.log(game)
