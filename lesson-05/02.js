@@ -48,3 +48,19 @@ objectOfGallery[nameOfGallery] = newValue;
 }
 updateGallery(gallery, '2222', 'Leonardo da Vinci, 1503-1506')
 console.log(gallery);
+
+
+
+
+
+//     if (keys === key) {
+//         gallerys[key] = newValue
+//         return
+//
+//     }
+//     else {
+//         gallerys[keys] = newValue
+//         return
+//     }
+//
+// }
