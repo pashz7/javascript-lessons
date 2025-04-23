@@ -41,11 +41,10 @@ function updateGallery(objectOfGallery, nameOfGallery, newValue) {
       objectOfGallery[key] = newValue;
       return
     }
-    else {
-      objectOfGallery[key] = newValue;
-    }
-  }
 
+
+  }
+objectOfGallery[nameOfGallery] = newValue;
 }
-updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, '2222', 'Leonardo da Vinci, 1503-1506')
 console.log(gallery);
