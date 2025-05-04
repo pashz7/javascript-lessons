@@ -6,19 +6,19 @@
 function isNumeric(str) {
   // your code
 
-//     let b = Number(str)
-//   if (b) {
-//       return true
-//   }
-// else {
-//     return false
-//   }
+    let b = Number(str)
+  if (b) {
+      return true
+  }
+else {
+    return false
+  }
 
 
-    return !isNaN(str)
+    // return !isNaN(str) && ``
 
 }
-console.log(isNumeric(`123`))
+console.log(isNumeric(``))
 // console.log(isNumeric("123")) // Ожидаемый результат: true
 // console.log(isNumeric("12.3")) // Ожидаемый результат: true
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
