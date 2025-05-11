@@ -69,38 +69,24 @@ clearCartButton.addEventListener('click', function () {
 
 // Твой код:
 
-// petShop.addEventListener('click', function(event) {
-//   // Проверяем, кликнули ли по кнопке питомца
-//   if (event.target.classList.contains('pet')) {
-//     // Проверяем, не превышает ли количество питомцев в корзине 3
-//     if (cart.length < 3) {
-//       const petId = event.target.id; // Получаем id питомца
-//       cart.push(petId); // Добавляем питомца в корзину
-//       updateCartDisplay(); // Обновляем отображение корзины
-//     } else {
-//       // Если корзина полна, показываем сообщение
-//       messageBox.textContent = 'Вы не можете добавить более 3 питомцев';
-//     }
+petShop.addEventListener('click', function(event) {
+  // Проверяем, кликнули ли по кнопке питомца
+  if (event.target.classList.contains('pet')) {
+    // Проверяем, не превышает ли количество питомцев в корзине 3
+    if (cart.length < 3) {
+      const petId = event.target.id; // Получаем id питомца
+      cart.push(petId); // Добавляем питомца в корзину
+      updateCartDisplay(); // Обновляем отображение корзины
+    } else {
+      // Если корзина полна, показываем сообщение
+      messageBox.textContent = 'Вы не можете добавить более 3 питомцев';
+    }
+  }
+});
+// petShop.addEventListener('click', (event) => {
+//   const findPet = event.target.id
+//   for (let i = 0; i < cart.length; i++) {
+//     const boughtPet = cart[i];
+//
 //   }
-// });
-petShop.addEventListener('click', (event) => {
-  const wantedPet = event.target.id
-  // cart.push(wantedPet)
-  for (let i = 0; i < cart.length; i++) {
-    // const boughtPet = cart[i]
-    // const boughtPetBtnElem = document.createElement('li')
-    // boughtPetBtnElem.classList.add('pet')
-    // boughtPetBtnElem.id = boughtPet.id
-    // boughtPetBtnElem.textContent = boughtPet.title
-    // cartList.append(boughtPetBtnElem)
-  }
-  if (cart.length < 3) {
-    cart.push(wantedPet)
-
-  }
-  else {
-    messageBox.textContent = 'Вы не можете добавить более 3 питомцев';
-  }
-
-  updateCartDisplay()
-})
+// })
