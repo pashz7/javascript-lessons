@@ -22,7 +22,7 @@
 Обратите внимание на корректность работы таймера: повторное нажатие на "Старт" не должно приводить к нескольким одновременно работающим таймерам.
 
 Подсказки:
-- 🧙‍♂️ Для выполнения этого задания нужно познакомиться с браузерными функциями setInterval (https://doka.guide/js/setinterval/) и clearInterval(https://doka.guide/js/clearinterval/). Они очень похоже на setTimeout и clearTimeout.
+- 🧙‍♂️ Для выполнения этого задания нужно познакомиться с браузерными функциями setIntervahttps://doka.guide/js/setinterval/l (https://doka.guide/js/setinterval/) и clearInterval(https://doka.guide/js/clearinterval/). Они очень похоже на setTimeout и clearTimeout.
  */
 
 const startButton = document.getElementById('start')
@@ -34,10 +34,53 @@ let timerId
 
 startButton.addEventListener('click', () => {
   let counter = 3
+   if (isTimerStarted) {
+       return
+   }
+    isTimerStarted = true
+ // if(!isTimerStarted) {
+
+     console.log(`TIMER START -`,isTimerStarted)
+ // }
+ //  isTimerStarted = true
+  countdownDisplay.textContent = counter;
+  timerId = setInterval(() => {
+     // counter--
+      countdownDisplay.textContent = --counter;
+      if (counter === 0) {
+          countdownDisplay.textContent = "🚀"
+          isTimerStarted = false
+          clearInterval(timerId)
+      }
+
+
+
+   // if (counter > 0) {
+   //   countdownDisplay.textContent = counter;
+   //
+   // }
+   // else {
+   //   countdownDisplay.textContent = "🚀"
+   //   isTimerStarted = false
+   //
+   // }
+
+  },1000)
 
   // your code
 })
+
+
 
 cancelButton.addEventListener('click', () => {
-  // your code
+if (!isTimerStarted ) {
+    return
+}
+
+  clearInterval(timerId)
+    countdownDisplay.textContent = `Отменено`;
+    isTimerStarted = false
+
+
 })
+
