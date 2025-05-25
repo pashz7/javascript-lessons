@@ -36,7 +36,7 @@ const model = {
 
     this.movies = newArray
     view.renderMovies(newArray)
-    view.displayMessage('Фильм удалён успешно!');
+
   }
 
 
@@ -119,6 +119,7 @@ const controller = {
   // your code
   deleteMovie(movieId) {
     model.deleteMovie(movieId)
+    view.displayMessage('Фильм удалён успешно!');
   }
 }
 
